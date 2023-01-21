@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo"><a href="index.html"><img src="images/logo1.png" alt="logo"></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="python.html">Python</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="c.html">C</a></li>
+            </ul>
+            <div class="srch"><input type="text" class="search" placeholder="Search here..."><img
+                    src="images/icons/search.png" alt="search" onclick=slide()></div>
+
+            <!--Side Menu -->
+            <img src="images/icons/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+        </nav>
+        <div class="side-menu" id="side-menu">
+            <div class="close" onclick="sideMenu(1)"><img src="images/icons/close.png" alt=""></div>
+            <div class="user">
+                <img src="images/raja.jpg" alt="Username">
+                <p>imrajastark</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="python.html">Python</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="c++.html">C++</a></li>
+                <li><a href="c.html">C</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px">Contact Us</p>
+		</center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+				<form action="mailto:imrajastark@gmail.com" method="post" enctype="text/plain">
+					<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name
+						<span class="imp">*</span></label><br>
+					<center>
+						<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input
+							type="text" name="lname" style="width: 175px" required="required"><br>
+					</center>
+					<label>Email <span class="imp">*</span></label><br>
+					<input type="email" name="mail" style="width: 100%" required="required"><br>
+					<label>Message <span class="imp">*</span></label><br>
+					<input type="text" name="message" style="width: 100%" required="required"><br>
+					<label>Additional Details</label><br>
+					<textarea name="addtional"></textarea><br>
+					<button type="submit" id="csubmit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+    <!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<center><span>Give Feedbacks</span></center>
+		<div class="shortdesc2">
+			<center>
+				<p>Please share your valuable feedback to us</p>
+			</center>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:imrajastark@gmail.com" method="post" enctype="text/plain">
+				<label>Your Name</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right,rgb(42, 6, 6), red ); margin-top: 50px;" direction="left"
+		onmouseover="this.stop()" onmouseout="this.start()" scrollamount="18">
+		<div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it
+			today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is
+			expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and
+			change.”</div>
+	</marquee>
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/logo1.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icons/fb.webp"></a>
+					<a href="#"><img src="images/icons/insta.webp"></a>
+					<a href="#"><img src="images/icons/twitter.png"></a>
+					<a href="#"><img src="images/icons/linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2023 Created By Raja Babu, Banti kumar, Gaurav Kumar and Aviraj All
+					Rights Reserved.</p>
+				<br>
+				<p class="loc"><img src="images/icons/location.png"> Muzaffarpur Institute of Technology<br>Muzaffarpur,
+					<Bihar-842003></Bihar-842003>
+				</p>
+				<br>
+				<p class="phone"><img src="images/icons/phone.svg"> +91-7250319466<br><img
+						src="images/icons/email.svg">&nbsp;
+					imrajastark@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Latest Notifications</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
